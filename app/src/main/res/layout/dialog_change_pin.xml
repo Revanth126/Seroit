@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Step label -->
+    <TextView
+        android:id="@+id/pinEntryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Enter new PIN"
+        android:textColor="@color/grey"
+        android:textSize="13sp" />
+
+    <!-- PIN dot indicators -->
+    <LinearLayout
+        android:id="@+id/pinDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/outline"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="2dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pinDot1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/outline"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="2dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pinDot2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/outline"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="2dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pinDot3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/outline"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="2dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pinDot4"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/outline"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="2dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pinDot5"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/outline"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="2dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pinDot6"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- Keypad row 1: 1, 2, 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey1" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="1" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey2" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="2" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey3" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="3" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Keypad row 2: 4, 5, 6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey4" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="4" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey5" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="5" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey6" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="6" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Keypad row 3: 7, 8, 9 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey7" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="7" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey8" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="8" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey9" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="9" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Keypad row 4: backspace, 0, spacer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView android:id="@+id/pinKeyBackspace" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="⌫" android:textColor="@color/black" android:textSize="18sp" /></androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/pinKey0" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" android:foreground="?selectableItemBackground" app:cardBackgroundColor="#E6E5E5" app:cardCornerRadius="10dp" app:cardElevation="0dp"><TextView android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/poppins" android:gravity="center" android:text="0" android:textColor="@color/black" android:textSize="14sp" /></androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="45dp" android:layout_marginHorizontal="4dp" android:layout_weight="1" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="10dp" app:cardElevation="0dp" />
+    </LinearLayout>
+
+    <!-- Feedback label -->
+    <TextView
+        android:id="@+id/pinFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#D32F2F"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</LinearLayout>

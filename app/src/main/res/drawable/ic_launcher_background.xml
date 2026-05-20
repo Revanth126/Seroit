@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Deep warm brown background — nothing to do with a locker -->
+    <path
+        android:fillColor="#4A2C2A"
+        android:pathData="M0,0h108v108h-108z" />
+    <!-- Subtle radial highlight -->
+    <path
+        android:fillColor="#5C3A36"
+        android:pathData="M54,54 m-40,0 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0" />
+</vector>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:paddingBottom="32dp">
+
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:navigationIcon="@drawable/ic_launcher_foreground"
+            app:navigationContentDescription="Back"
+            app:title="Quiz Configuration"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:titleTextColor="?colorPrimary" />
+
+        <!-- Topic Section Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:letterSpacing="0.1"
+            android:text="SELECT TOPIC"
+            android:textAllCaps="true"
+            android:textColor="?colorPrimary"
+            android:textSize="11sp" />
+
+        <!-- Topic RadioGroup -->
+        <RadioGroup
+            android:id="@+id/topicGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioTopicEnglishGrammar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="English Grammar"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioTopicAptitude"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="Aptitude"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioTopicReasoning"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="Reasoning"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioTopicGeneralKnowledge"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="General Knowledge"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioTopicScience"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="Science"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioTopicHistory"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="History"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioTopicGeography"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="Geography"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioTopicMathematics"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="Mathematics"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/grey_light" />
+
+        <!-- Difficulty Section Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:letterSpacing="0.1"
+            android:text="SELECT DIFFICULTY"
+            android:textAllCaps="true"
+            android:textColor="?colorPrimary"
+            android:textSize="11sp" />
+
+        <!-- Difficulty RadioGroup -->
+        <RadioGroup
+            android:id="@+id/difficultyGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioDifficultyEasy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="Easy"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioDifficultyMedium"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="Medium"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioDifficultyHard"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:text="Hard"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/grey_light" />
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/accent" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            app:strokeColor="?colorPrimary" />
+
+    </LinearLayout>
+</ScrollView>
