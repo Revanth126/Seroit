@@ -34,4 +34,3 @@ MIT License
 
 ---
 
-Made with ❤️ by [Ayush](https://github.com/binarybeam)
