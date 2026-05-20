@@ -1,10 +1,10 @@
 # Locker
 
-A simple and secure app locker built with Kotlin for Android. Lock any installed app with PIN, pattern, or fingerprint authentication.
+A simple and secure AI based Quiz app locker built with Kotlin for Android. Lock any installed app with Quiz of different genres also with PIN, pattern, or fingerprint authentication.
 
 ## Features
 
-* Lock apps with PIN or biometrics
+*Lock apps with PIN or biometrics
 * Lightweight and fast
 * Auto-lock on screen off or after timeout
 
